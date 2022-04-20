@@ -1,0 +1,11 @@
+header{
+    border-bottom: solid 5px rgb(0, 255, 221);
+    position: static;
+}
+.accueil{
+    background-image: url(imm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-color: rgba(66, 173, 245, 0.966);
+}
