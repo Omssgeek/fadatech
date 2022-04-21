@@ -13,24 +13,28 @@
     <title>Fadatech</title>
 </head>
 <body>
-    <header class="p-3 bg-secondary bg-opacity-75 text-white lg-fixed-top sm-d-none fixed-top">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-white">FadaTech</a></li>
-            </ul>
+  <header class="fixed-top">
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-white">Accueil</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Explorer</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Créer</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Partager</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <div class="container">
+        <div class="">
+          <a href="#" class="nav-link px-2 text-white">FadaTech</a>
         </div>
-      </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-5  navbar-nav-scroll">
+                <li><a href="#" class="nav-link px-2 text-white">Accueil</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Explorer</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Créer</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Partager</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
 
   <section class="accueil">
     <div class="container-fluid">
@@ -150,7 +154,36 @@
   <div class="container-fluid-xlg p-4 bg-dark text-center">
     <h1 class="text-light">FadaTech</h1>
 <p class="text-light">Copyright © 2019 </p>
-<button type="button" class="btn bg-success text-light ">Nous contacter</button>
+<button type="button" class="btn bg-success text-light " data-bs-toggle="modal" data-bs-target="#exampleModal">Nous contacter</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form class="p-4 p-md-5 border rounded-3 bg-white bg-opacity-75">
+          <h5 class="text-start">Nous contacter</h5>
+          <br>
+          <div class="form-floating mb-3 ">
+            <p class="text-start">Name</p>
+            <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+            <label for="floatingInput"></label>
+          </div>
+          <div class="form-floating mb-3">
+            <p class="text-start">Email</p>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword"></label>
+          </div>
+          <div class="form-floating mb-3">
+            <p class="text-start">Message</p>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword"></label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary bg-primary text-white" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 </section>
     <!-- JavaScript Bundle with popper -->
